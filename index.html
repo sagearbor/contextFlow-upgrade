@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Upgrade | ContextFlow AI</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade ContextFlow</title>
     <style>
-        body { font-family: -apple-system, system-ui, sans-serif; background-color: #f8fafc; color: #1e293b; display: flex; flex-direction: column; align-items: center; padding: 50px 20px; }
-        .header { text-align: center; max-width: 600px; margin-bottom: 40px; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f172a; }
-        p { font-size: 1.1rem; color: #64748b; }
-        .badge { background: #e2e8f0; padding: 4px 12px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; display: inline-block; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Nice gradient */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            margin: 0;
+        }
+        h1 { margin-bottom: 10px; font-size: 2.5rem; }
+        .subtitle { opacity: 0.9; margin-bottom: 40px; font-size: 1.2rem; }
+        
+        /* THIS IS THE FIX FOR SIDE-BY-SIDE */
+        .pricing-container {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px; /* <--- Must be wide enough for 2 columns */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <span class="badge">Trial Expired</span>
-        <h1>Continue your flow.</h1>
-        <p>Choose a plan to unlock full attestation reports, legal jargon simplification, and unlimited AI summaries.</p>
-    </div>
+    <h1>🚀 Upgrade ContextFlow</h1>
+    <p class="subtitle">Unlock the full power of your reading assistant.</p>
 
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1SxpDqHgnce3iNWmaTMQoTWB"
-        publishable-key="pk_live_51Sx8lXHgnce3iNWmvAZ9kA276MpdMJwBFbCkD5oG6xK3N4PZoH6FqOWV93odb24Ujdiio9doyrCXhFNXBTmbg1NX00JpGqkjnu">
-    </stripe-pricing-table>
+    <div class="pricing-container">
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table 
+            pricing-table-id="prctbl_1SxpDqHgnce3iNWmaTMQoTWB"
+            publishable-key="pk_live_51Sx8lXHgnce3iNWmvAZ9kA276MpdMJwBFbCkD5oG6xK3N4PZoH6FqOWv93odb24Ujdiio9doyrCXhFNXBTmbg1NX00JpGqkjnu">
+        </stripe-pricing-table>
+    </div>
 </body>
 </html>
