@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upgrade | ContextFlow AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: -apple-system, system-ui, sans-serif; background-color: #f8fafc; color: #1e293b; display: flex; flex-direction: column; align-items: center; padding: 50px 20px; }
+        .header { text-align: center; max-width: 600px; margin-bottom: 40px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #0f172a; }
+        p { font-size: 1.1rem; color: #64748b; }
+        .badge { background: #e2e8f0; padding: 4px 12px; border-radius: 99px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="badge">Trial Expired</span>
+        <h1>Continue your flow.</h1>
+        <p>Choose a plan to unlock full attestation reports, legal jargon simplification, and unlimited AI summaries.</p>
+    </div>
+
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <stripe-pricing-table 
+        pricing-table-id="prctbl_1SxpDqHgnce3iNWmaTMQoTWB"
+        publishable-key="pk_live_51Sx8lXHgnce3iNWmvAZ9kA276MpdMJwBFbCkD5oG6xK3N4PZoH6FqOWV93odb24Ujdiio9doyrCXhFNXBTmbg1NX00JpGqkjnu">
+    </stripe-pricing-table>
+</body>
+</html>
